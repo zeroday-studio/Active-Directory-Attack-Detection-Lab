@@ -10,7 +10,7 @@ This section covers the complete setup of Splunk Enterprise on Ubuntu Server, in
 - Download Ubuntu Server ISO  
 
 📸 Figure 1 — Ubuntu Server Download Page  
-![Ubuntu Download](images/figure1_ubuntu_download.png)
+![Ubuntu Download](../images/figure1_ubuntu_download.png)
 
 ---
 
@@ -19,7 +19,7 @@ This section covers the complete setup of Splunk Enterprise on Ubuntu Server, in
 - Download Splunk Enterprise Free Trial (.deb package)  
 
 📸 Figure 2 — Splunk Download Page  
-![Splunk Download](images/figure2_splunk_download.png)
+![Splunk Download](../images/figure2_splunk_download.png)
 
 ---
 
@@ -28,7 +28,7 @@ This section covers the complete setup of Splunk Enterprise on Ubuntu Server, in
 - Copy Splunk `.deb` file into this folder  
 
 📸 Figure 3 — Project Folder  
-![Project Folder](images/figure3_project_folder.png)
+![Project Folder](../images/figure3_project_folder.png)
 
 ---
 
@@ -48,7 +48,7 @@ sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
 📸 Figure 4 — Ubuntu Static IP Configuration  
-![Static IP](images/figure4_static_ip.png)
+![Static IP](../images/figure4_static_ip.png)
 
 ### Apply Configuration
 ```bash
@@ -75,7 +75,7 @@ sudo apt-get install virtualbox-guest-additions-iso
 - Add folder: `Active_Directory_Project`
 
 📸 Figure 5 — Shared Folder Setup  
-![Shared Folder](images/figure5_shared_folder.png)
+![Shared Folder](../images/figure5_shared_folder.png)
 
 ---
 
@@ -95,7 +95,7 @@ ls
 ```
 
 📸 Figure 6 — Mount Output  
-![Mount Output](images/figure6_mount.png)
+![Mount Output](../images/figure6_mount.png)
 
 ---
 
@@ -105,7 +105,7 @@ sudo dpkg -i splunk*.deb
 ```
 
 📸 Figure 7 — Splunk Installation  
-![Splunk Install](images/figure7_install.png)
+![Splunk Install](../images/figure7_install.png)
 
 ---
 
@@ -117,7 +117,7 @@ cd /opt/splunk/bin
 ```
 
 📸 Figure 8 — Splunk Start  
-![Splunk Start](images/figure8_start.png)
+![Splunk Start](../images/figure8_start.png)
 
 ---
 
@@ -135,10 +135,10 @@ http://192.168.10.10:8000
 ```
 
 📸 Figure 9 — Splunk Login  
-![Splunk Login](images/figure9_login.png)
+![Splunk Login](../images/figure9_login.png)
 
 📸 Figure 10 — Splunk Dashboard  
-![Dashboard](images/figure10_dashboard.png)
+![Dashboard](../images/figure10_dashboard.png)
 
 ---
 
@@ -146,7 +146,7 @@ http://192.168.10.10:8000
 - Go to: Settings → Indexes → New  
 
 📸 Figure 11 — Index Creation  
-![Index](images/figure11_index.png)
+![Index](../images/figure11_index.png)
 
 ---
 
@@ -155,7 +155,7 @@ http://192.168.10.10:8000
 - Add port: `9997`
 
 📸 Figure 12 — Receiving Port  
-![Port](images/figure12_port.png)
+![Port](../images/figure12_port.png)
 
 ---
 
@@ -174,7 +174,7 @@ index=endpoint
 - Windows 10 Target Machine  
 
 📸 Figure 13 — Connected Forwarders  
-![Forwarders](images/figure13_forwarders.png)
+![Forwarders](../images/figure13_forwarders.png)
 
 > ⚠️ **Note:** This will be visible only after both systems (AD Server and Target PC) are successfully configured with Splunk Forwarders and connected to the Splunk Server. Please verify after adding both systems.
 
