@@ -27,7 +27,7 @@ This project demonstrates the design and implementation of a complete **Security
 ## 🌐 Network Architecture
 
 📸 Network Diagram  
-![Network Diagram](images/network_diagram.png)
+![Network Diagram](../images/network_diagram.png)
 
 ---
 
@@ -45,7 +45,7 @@ This project demonstrates the design and implementation of a complete **Security
 ## ⚙️ Lab Setup Steps
 
 ### 1️⃣ Splunk Server Setup
-👉 [Click here for Splunk Setup](../Installation-steps/splunk_server_config.md)
+👉 [Click here for Splunk Setup](Installation-steps/splunk_server_config.md)
 
 - Installed Splunk Enterprise on Ubuntu  
 - Configured receiving port (9997)  
