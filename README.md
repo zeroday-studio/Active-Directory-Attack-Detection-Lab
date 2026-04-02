@@ -27,7 +27,7 @@ This project demonstrates the design and implementation of a complete **Security
 ## 🌐 Network Architecture
 
 📸 Network Diagram  
-![Network Diagram](../images/network_diagram.png)
+![Network Diagram](images/network_diagram.png)
 
 ---
 
@@ -54,7 +54,7 @@ This project demonstrates the design and implementation of a complete **Security
 ---
 
 ### 2️⃣ Windows 10 Target Setup
-👉 [Click here for Windows 10 Setup](windows10_installation.md)
+👉 [Click here for Windows 10 Setup](Installation-steps/windows10_setup.md)
 
 - Installed Windows 10  
 - Installed Splunk Universal Forwarder  
@@ -64,7 +64,7 @@ This project demonstrates the design and implementation of a complete **Security
 ---
 
 ### 3️⃣ Active Directory Setup
-👉 [Click here for AD Setup](ad_server_setup.md)
+👉 [Click here for AD Setup](Installation-steps/ad_server_setup.md)
 
 - Installed AD DS  
 - Created domain: `rocky.local`  
@@ -77,7 +77,7 @@ This project demonstrates the design and implementation of a complete **Security
 ---
 
 ### 4️⃣ Attack Simulation — Brute Force (Hydra)
-👉 [Click here for Attack Detection](attack_detect_logs.md)
+👉 [Click here for Attack Detection](attack_logs_simulation/attack_detect_logs.md)
 
 - Performed brute force using Hydra  
 - Generated:
@@ -88,7 +88,7 @@ This project demonstrates the design and implementation of a complete **Security
 ---
 
 ### 5️⃣ Atomic Red Team Simulation
-👉 [Click here for Atomic Red Team](atomic_red_team_simulation.md)
+👉 [Click here for Atomic Red Team](attack_logs_simulation/atomic_red_team_simulation.md)
 
 - Simulated MITRE ATT&CK techniques:
   - T1059 (PowerShell Execution)  
