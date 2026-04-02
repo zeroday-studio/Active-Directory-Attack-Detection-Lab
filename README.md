@@ -45,7 +45,7 @@ This project demonstrates the design and implementation of a complete **Security
 ## ⚙️ Lab Setup Steps
 
 ### 1️⃣ Splunk Server Setup
-👉 [Click here for Splunk Setup](splunk_server_setup.md)
+👉 [Click here for Splunk Setup](../Installation-steps/splunk_server_setup.md)
 
 - Installed Splunk Enterprise on Ubuntu  
 - Configured receiving port (9997)  
