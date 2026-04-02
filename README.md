@@ -170,7 +170,7 @@ This project demonstrates the implementation of a complete SOC lab with attack s
 
 ## 👨‍💻 Author
 Rakesh A R  
-Aspiring Cybersecurity Analyst 
+Aspiring Cybersecurity Analyst                                                                                                          
 https://www.linkedin.com/in/rakesh-a-r-595517288
 
 ---
