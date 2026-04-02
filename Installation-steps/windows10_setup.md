@@ -18,7 +18,7 @@ Download the Windows 10 ISO from the official Microsoft website and attach it to
 👉 This ISO will be used to install the operating system inside the virtual machine.
 
 📸 Figure 1 — Windows 10 Download Page  
-![Windows Download](images/win10_figure1_download.png)
+![Windows Download](../images/win10_figure1_download.png)
 
 ---
 
@@ -49,7 +49,7 @@ target-PC
 - Makes log analysis easier in multi-machine environments  
 
 📸 Figure 2 — Hostname (target-PC)  
-![Hostname](images/win10_figure2_hostname.png)
+![Hostname](../images/win10_figure2_hostname.png)
 
 ---
 
@@ -59,10 +59,10 @@ target-PC
 Used to send logs from the endpoint (Windows machine) to the Splunk Server.
 
 📸 Figure 3 — Splunk Download Page  
-![Splunk Download](images/win10_figure3_splunk_download.png)
+![Splunk Download](../images/win10_figure3_splunk_download.png)
 
 📸 Figure 4 — Splunk Universal Forwarder Download  
-![Forwarder Download](images/win10_figure4_forwarder_download.png)
+![Forwarder Download](../images/win10_figure4_forwarder_download.png)
 
 👉 Role:
 - Acts as a lightweight agent
@@ -74,7 +74,7 @@ Used to send logs from the endpoint (Windows machine) to the Splunk Server.
 Sysmon is a Windows system service that logs detailed system activity.
 
 📸 Figure 5 — Sysmon Download Page  
-![Sysmon Download](images/win10_figure5_sysmon_download.png)
+![Sysmon Download](../images/win10_figure5_sysmon_download.png)
 
 👉 Why Sysmon?
 - Tracks process creation  
@@ -85,10 +85,12 @@ Sysmon is a Windows system service that logs detailed system activity.
 ---
 
 ### 🔹 Sysmon Configuration File
-👉 [Click here for sysmonconfig.xml](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml)
+👉 [Click here for sysmonconfig.xml](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml)                        
+or                                                                                                                                      
+👉 [Click here for sysmonconfig.xml](../files/sysmonconfig.xml)
 
 📸 Figure 6 — Sysmon Config (GitHub)  
-![Sysmon Config](images/win10_figure6_sysmon_config.png)
+![Sysmon Config](../images/win10_figure6_sysmon_config.png)
 
 👉 This config:
 - Filters unnecessary logs  
@@ -99,7 +101,7 @@ Sysmon is a Windows system service that logs detailed system activity.
 
 ### 📁 Downloaded Files
 📸 Figure 7 — Downloaded Files Folder  
-![Downloaded Files](images/win10_figure7_downloaded_files.png)
+![Downloaded Files](../images/win10_figure7_downloaded_files.png)
 
 👉 This ensures all required tools are ready before installation.
 
@@ -123,7 +125,7 @@ Example:
 - This connects the endpoint to the SIEM  
 
 📸 Figure 8 — Forwarder Installation  
-![Forwarder Install](images/win10_figure8_forwarder_install.png)
+![Forwarder Install](../images/win10_figure8_forwarder_install.png)
 
 ---
 
@@ -150,11 +152,13 @@ cd <Sysmon_Directory_Path>
 - Registry changes  
 
 📸 Figure 9 — Sysmon Installation  
-![Sysmon Install](images/win10_figure9_sysmon_install.png)
+![Sysmon Install](../images/win10_figure9_sysmon_install.png)
 
 ---
 
 ## 📄 Step 6 — Configure inputs.conf
+
+👉 [Click here for inputs.conf](../files/inputs.conf)
 
 ### Create File
 - Open Notepad as Administrator  
@@ -175,10 +179,10 @@ C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf
 - Example: Sysmon logs, Windows logs  
 
 📸 Figure 10 — inputs.conf Editing  
-![Inputs Edit](images/win10_figure10_inputs_edit.png)
+![Inputs Edit](../images/win10_figure10_inputs_edit.png)
 
 📸 Figure 11 — inputs.conf Path  
-![Inputs Path](images/win10_figure11_inputs_path.png)
+![Inputs Path](../images/win10_figure11_inputs_path.png)
 
 ---
 
@@ -197,7 +201,7 @@ Local System Account
 - Required for collecting security logs  
 
 📸 Figure 12 — Service Configuration  
-![Service Config](images/win10_figure12_service_config.png)
+![Service Config](../images/win10_figure12_service_config.png)
 
 ---
 
@@ -209,7 +213,7 @@ Restart-Service SplunkForwarder
 👉 Restart is required to apply new configurations.
 
 📸 Figure 13 — Service Running  
-![Service Running](images/win10_figure13_service_running.png)
+![Service Running](../images/win10_figure13_service_running.png)
 
 ---
 
@@ -228,7 +232,7 @@ Status: Running
 - Logging is enabled  
 
 📸 Figure 14 — Sysmon Status  
-![Sysmon Status](images/win10_figure14_sysmon_status.png)
+![Sysmon Status](../images/win10_figure14_sysmon_status.png)
 
 ---
 
